@@ -24,8 +24,10 @@ This repository holds the distribution kit (plugin manifests, skills, guides). T
 
 ## Connect
 
-### Claude (claude.ai, Claude Desktop, Claude Code)
+### Claude (claude.ai, Claude Desktop, Claude Code, Cowork)
 Settings → Connectors → *Add custom connector* → `https://nilyo.com/mcp` → sign in on the Nilyo page. Claude Code: `claude mcp add --transport http nilyo https://nilyo.com/mcp`.
+
+This repository is also a **Claude plugin** (`.claude-plugin/plugin.json` + `.mcp.json` + `skills/`): `claude plugin marketplace add nilyo-com/nilyo-mcp` then `claude plugin install nilyo`, or install it from the Claude plugin directory once listed. The plugin bundles the Nilyo connector with the six skills below and a setup skill.
 
 ### ChatGPT
 Settings → Plugins (Developer mode) → add MCP server `https://nilyo.com/mcp` with OAuth, or install the published **Nilyo** plugin from the directory. The portable plugin package is in [`chatgpt/`](chatgpt/) and the skills in [`skills/`](skills/).
@@ -54,7 +56,7 @@ Task-oriented skills (SKILL.md + `agents/openai.yaml`), usable in ChatGPT, Codex
 | `nilyo-recruiting` | applicants, resumes, Recruiter projects, sourcing |
 | `nilyo-messaging-contacts` | WhatsApp, Telegram and Instagram messages by contact name |
 | `nilyo-inbox-triage` | summaries, counts, unanswered messages, scheduled check-ins |
-| `nilyo-account-setup` | connecting and reconnecting accounts, plan |
+| `nilyo-setup` | first sign-in, connecting and reconnecting accounts, plan |
 
 ## Good to know
 

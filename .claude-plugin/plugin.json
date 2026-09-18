@@ -1,0 +1,12 @@
+{
+  "name": "nilyo",
+  "displayName": "Nilyo",
+  "version": "1.5.2",
+  "description": "Your own LinkedIn, WhatsApp, Instagram, Telegram, Email and Calendar accounts in Claude: search, read, message and publish on your accounts through the Nilyo remote MCP (OAuth), with skills for outreach, content, recruiting, messaging, inbox triage and account setup.",
+  "author": { "name": "Unipile SAS", "email": "contact@nilyo.com", "url": "https://nilyo.com" },
+  "homepage": "https://nilyo.com/setup-for-agents",
+  "repository": "https://github.com/nilyo-com/nilyo-mcp",
+  "license": "MIT",
+  "keywords": ["linkedin", "whatsapp", "instagram", "telegram", "email", "imap", "gmail", "outlook", "calendar", "messaging", "sales", "recruiting", "crm", "mcp"],
+  "mcpServers": "./.mcp.json"
+}

@@ -1,11 +1,6 @@
 ---
 name: nilyo
 description: Give an agent access to the user's own LinkedIn, WhatsApp, Instagram, Telegram and Email accounts, supported calendars, and direct realtime event destinations through Nilyo's agent-friendly MCP.
-version: 1.5.1
-homepage: https://nilyo.com
-metadata:
-  openclaw:
-    emoji: "🌉"
 ---
 # Nilyo
 Remote MCP: `https://nilyo.com/mcp`

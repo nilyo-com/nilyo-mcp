@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "nilyo": {
+      "type": "http",
+      "url": "https://nilyo.com/mcp"
+    }
+  }
+}
