@@ -1,0 +1,6 @@
+{
+  "client_id": "https://raw.githubusercontent.com/nilyo-com/nilyo-mcp/main/oauth-test-client.json",
+  "client_name": "CIMD test client (GitHub)",
+  "redirect_uris": ["https://claude.ai/api/mcp/auth_callback"],
+  "token_endpoint_auth_method": "none"
+}
