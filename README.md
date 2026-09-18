@@ -5,6 +5,8 @@
 - **Endpoint:** `https://nilyo.com/mcp` (Streamable HTTP)
 - **Auth:** OAuth 2.1 with dynamic client registration (sign in or create your Nilyo account on the authorization page; 7-day free trial, no card). Personal tokens for runtimes without OAuth.
 - **Tools:** 170+ intent-named tools with titles and MCP annotations (read-only / destructive / open-world), exact ID resolution, corrective errors, human-like pacing per provider.
+[![smithery badge](https://smithery.ai/badge/arnaud-ehq0/nilyo)](https://smithery.ai/servers/arnaud-ehq0/nilyo) [![Nilyo MCP connector](https://glama.ai/mcp/connectors/com.nilyo/nilyo/badges/score.svg)](https://glama.ai/mcp/connectors/com.nilyo/nilyo)
+
 - **Registry:** `com.nilyo/nilyo` in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.nilyo/nilyo) · [Glama](https://glama.ai/mcp/connectors/com.nilyo/nilyo) · [Smithery](https://smithery.ai/servers/arnaud-ehq0/nilyo) · [mcp.so](https://mcp.so/servers/nilyo)
 
 This repository holds the distribution kit (plugin manifests, skills, guides). The service itself is operated by [Unipile SAS](https://nilyo.com/legal-notice).

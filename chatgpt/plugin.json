@@ -9,7 +9,7 @@
     "url": "https://nilyo.com"
   },
   "homepage": "https://nilyo.com",
-  "repository": "https://github.com/unipile/uniconnect",
+  "repository": "https://github.com/nilyo-com/nilyo-mcp",
   "license": "MIT",
   "keywords": [
     "linkedin",
@@ -31,7 +31,7 @@
       "interface": {
         "displayName": "Nilyo",
         "shortDescription": "Your own LinkedIn, WhatsApp, Instagram, Telegram, Email and Calendar accounts, usable from ChatGPT.",
-        "longDescription": "Plugs your LinkedIn, WhatsApp, Instagram, Telegram, your email and your calendar — straight into ChatGPT, so it can act for you.\n\nReach the right people. Find them on LinkedIn, see who already knows them in your network, turn a profile link into a message that's ready to send, or follow up on WhatsApp. Say \"send a WhatsApp to Julien saying I'm running late\" and it's gone.\n\nNever miss a reply. Schedule a task and let ChatGPT check your LinkedIn, WhatsApp and email every morning, summarize what came in, flag the messages that still need an answer and draft the replies — you just approve.\n\nOne agent, all your channels. Comment post on LinkedIn, Research on Instagram, follow up on WhatsApp, confirm by email, check your calendar — without leaving the chat. Catch up on any inbox, grab the attachment you need, or re-read what you last wrote to someone before answering them.",
+        "longDescription": "Plugs your LinkedIn, WhatsApp, Instagram, Telegram, your email and your calendar \u2014 straight into ChatGPT, so it can act for you.\n\nReach the right people. Find them on LinkedIn, see who already knows them in your network, turn a profile link into a message that's ready to send, or follow up on WhatsApp. Say \"send a WhatsApp to Julien saying I'm running late\" and it's gone.\n\nNever miss a reply. Schedule a task and let ChatGPT check your LinkedIn, WhatsApp and email every morning, summarize what came in, flag the messages that still need an answer and draft the replies \u2014 you just approve.\n\nOne agent, all your channels. Comment post on LinkedIn, Research on Instagram, follow up on WhatsApp, confirm by email, check your calendar \u2014 without leaving the chat. Catch up on any inbox, grab the attachment you need, or re-read what you last wrote to someone before answering them.",
         "developerName": "Unipile SAS",
         "category": "Productivity",
         "capabilities": [

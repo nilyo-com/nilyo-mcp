@@ -4,7 +4,7 @@
   "title": "Nilyo",
   "description": "Your own LinkedIn, WhatsApp, Instagram, Telegram, Email and Calendar accounts, usable from any agent",
   "websiteUrl": "https://nilyo.com/setup-for-agents",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "remotes": [
     {
       "type": "streamable-http",
@@ -26,5 +26,9 @@
         "512x512"
       ]
     }
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/nilyo-com/nilyo-mcp",
+    "source": "github"
+  }
 }

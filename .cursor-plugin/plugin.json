@@ -1,7 +1,7 @@
 {
   "name": "nilyo",
   "displayName": "Nilyo",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "description": "Use your own LinkedIn, WhatsApp, Instagram, Telegram, Email (Gmail, Outlook, IMAP) and Calendar accounts from Cursor's agent: search, read, message and publish on your own accounts through Nilyo's remote MCP (OAuth, no credentials in the editor).",
   "author": {
     "name": "Unipile SAS",
@@ -9,6 +9,19 @@
     "url": "https://nilyo.com"
   },
   "license": "MIT",
-  "keywords": ["mcp", "linkedin", "whatsapp", "instagram", "telegram", "email", "imap", "calendar", "messaging", "sales", "recruiting"],
-  "logo": "assets/logo.png"
+  "keywords": [
+    "mcp",
+    "linkedin",
+    "whatsapp",
+    "instagram",
+    "telegram",
+    "email",
+    "imap",
+    "calendar",
+    "messaging",
+    "sales",
+    "recruiting"
+  ],
+  "logo": "assets/logo.png",
+  "repository": "https://github.com/nilyo-com/nilyo-mcp"
 }
