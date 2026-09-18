@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.nilyo/nilyo",
+  "title": "Nilyo",
+  "description": "Your own LinkedIn, WhatsApp, Instagram, Telegram, Email and Calendar accounts, usable from any agent",
+  "websiteUrl": "https://nilyo.com/setup-for-agents",
+  "version": "1.5.1",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://nilyo.com/mcp"
+    }
+  ],
+  "icons": [
+    {
+      "src": "https://nilyo.com/media/nilyo-icon-256.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "256x256"
+      ]
+    },
+    {
+      "src": "https://nilyo.com/media/nilyo-logo-512.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ]
+}
