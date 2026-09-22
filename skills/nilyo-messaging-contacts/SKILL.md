@@ -13,6 +13,9 @@ description: Use when the user wants to send, read or reply to WhatsApp, Telegra
 3. `messaging_send_message(chat_id, text)`; attachments with `message_send_native_media`, audio messages with `message_send_voice_note` (native WhatsApp voice note). Reactions: `message_add_reaction` / `message_remove_reaction`.
 4. Show the draft and wait for approval before sending unless the user already gave the exact text ("send a WhatsApp to X saying …" is an approval).
 
+## Digest: "what did I receive since…"
+`messaging_list_recent_messages(provider, after, before?)` returns the inbound messages of the window grouped by chat (newest first). `include_sent: true` adds the user's own messages; `chat_type` restricts to groups or direct chats. When `complete` is false, more chats were active than `max_chats`: say the digest is partial rather than exhaustive. One call replaces paginating `messaging_list_chats` + `messaging_list_messages`.
+
 ## Per provider
 - **WhatsApp**: `whatsapp_list_conversations`, `whatsapp_read_conversation`, `whatsapp_send_message`, `whatsapp_start_conversation` (new chat by phone number, checked first with `whatsapp_is_number_registered`), `whatsapp_list_contacts`, `whatsapp_get_profile`. Voice notes and media are native WhatsApp messages.
 - **Telegram**: same generic chat tools (`messaging_*`, `message_*`) on the Telegram account; groups and channels appear in the chat list with `is_group` / `is_channel`; connection by QR or phone code (`telegram_connect`).
