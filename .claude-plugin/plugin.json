@@ -7,6 +7,7 @@
   "homepage": "https://nilyo.com/setup-for-agents",
   "repository": "https://github.com/nilyo-com/nilyo-mcp",
   "license": "MIT",
+  "privacyPolicyUrl": "https://nilyo.com/privacy",
   "keywords": ["linkedin", "whatsapp", "instagram", "telegram", "email", "imap", "gmail", "outlook", "calendar", "messaging", "sales", "recruiting", "crm", "mcp"],
   "mcpServers": "./.mcp.json"
 }
