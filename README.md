@@ -9,7 +9,7 @@
 
 - **Registry:** `com.nilyo/nilyo` in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.nilyo/nilyo) · [Glama](https://glama.ai/mcp/connectors/com.nilyo/nilyo) · [Smithery](https://smithery.ai/servers/arnaud-ehq0/nilyo) · [mcp.so](https://mcp.so/servers/nilyo)
 
-This repository holds the distribution kit (plugin manifests, skills, guides). The service itself is operated by [Unipile SAS](https://nilyo.com/legal-notice).
+This repository holds the distribution kit (plugin manifests, skills, guides).
 
 ## What your agent can do
 
