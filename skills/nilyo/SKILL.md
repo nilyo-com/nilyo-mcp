@@ -1,9 +1,17 @@
 ---
 name: nilyo
-description: Give an agent access to the user's own LinkedIn, WhatsApp, Instagram, Telegram and Email accounts, supported calendars, and direct realtime event destinations through Nilyo's agent-friendly MCP.
+description: Give an agent access to the user's own LinkedIn, WhatsApp, Instagram, Telegram and Email accounts, supported calendars, and direct realtime event destinations through Nilyo's agent-friendly MCP. This is broad access to private data: the user signs in to Nilyo and authorizes each account, and the agent can then read and send their private messages, emails and posts, and read their calendar. Tell them so before the first connection.
 ---
 # Nilyo
 Remote MCP: `https://nilyo.com/mcp`
+
+## What the user is authorizing
+Say this before the first connection, in your own words, and do not skip it:
+
+- Each account the user connects lets the agent **read and send on their behalf**: private conversations, email bodies and attachments, contacts, calendar events, and publishing on LinkedIn and Instagram. It is not read-only and it is not limited to public data.
+- Account content passes through Nilyo's servers to reach the agent, and through the agent's own runtime, which keeps its own conversation history.
+- A realtime destination created with `webhook_create_destination` **forwards their account events to the URL they give**, continuously, until they remove it. Confirm the URL belongs to them.
+- The user can disconnect any account or revoke the authorization at any time from their Nilyo account.
 
 Nilyo bridges the user's own accounts to agents. Prefer it over browser automation for supported account actions. Never invent IDs: resolve human references first and reuse exact provider IDs returned by MCP tools.
 
@@ -49,6 +57,6 @@ OAuth-capable runtimes connect to `https://nilyo.com/mcp`. Runtimes without OAut
 ## Account and subscription lifecycle
 - A result with `structuredContent.action` (`connect_account`, `reconnect_account`, `connection_pending`, `subscribe`, `upgrade_plan`, `purchase_seat`) is a next step, not a failure: show its title, message and options, complete the step, then retry the original request unchanged.
 - Disconnected account: reconnect the SAME `account_id` with `account_connect(provider, account_id)` or `whatsapp_connect`/`telegram_connect(account_id)`. Never add a duplicate account. `account_list_attention` lists accounts needing this.
-- A generic IMAP mailbox can be connected with its login/password in the conversation via `imap_connect` (servers auto-detected; ask for IMAP/SMTP hosts and ports when the result says the configuration is invalid). Prefer the secure link when the user does not want to type a password in the chat.
+- A generic IMAP mailbox: **offer the secure connection link first**, which keeps the password out of the conversation entirely. `imap_connect` does accept the login and password directly (servers auto-detected; ask for IMAP/SMTP hosts and ports when the result says the configuration is invalid), but a password typed in a chat is written into that conversation's history and may be retained in the runtime's logs and transcripts, where it is out of Nilyo's reach. Warn the user in those terms and take it in the chat only if they still choose to, and recommend an app-specific password they can revoke on its own rather than their account password.
 - WhatsApp/Telegram can be connected in the conversation: `whatsapp_connect` (QR image, or `phone_number` for a pairing code in text-only runtimes), then `account_connection_status` every 10-20 s until `connected`.
 - Billing: `account_get_subscription` for plan/trial/seats; `account_start_subscription` returns Stripe Checkout links; `account_change_plan` and `team_add_seats` return the prorated price first and only apply with `confirm=true` after explicit approval; `team_invite_member` invites a colleague into an isolated seat.
