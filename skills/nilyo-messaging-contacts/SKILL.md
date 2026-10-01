@@ -18,7 +18,7 @@ description: Use when the user wants to send, read or reply to WhatsApp, Telegra
 
 ## Per provider
 - **WhatsApp**: `whatsapp_list_conversations`, `whatsapp_read_conversation`, `whatsapp_send_message`, `whatsapp_start_conversation` (new chat by phone number, checked first with `whatsapp_is_number_registered`), `whatsapp_list_contacts`, `whatsapp_get_profile`. Voice notes and media are native WhatsApp messages.
-- **Telegram**: same generic chat tools (`messaging_*`, `message_*`) on the Telegram account; groups and channels appear in the chat list with `is_group` / `is_channel`; connection by QR or phone code (`telegram_connect`).
+- **Telegram**: same generic chat tools (`messaging_*`, `message_*`) on the Telegram account; groups and channels appear in the chat list with `is_group` / `is_channel`; connection by QR code (`telegram_connect`).
 - **Instagram**: DMs with `instagram_list_conversations`, `instagram_read_conversation`, `instagram_send_message`; research with `instagram_get_profile(username)`, `instagram_list_followers`, `instagram_list_following`, `instagram_get_my_profile`; `instagram_update_my_profile` only on explicit request. Instagram limits new conversations with people who do not follow the user: say so instead of retrying.
 
 ## Accounts

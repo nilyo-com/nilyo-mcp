@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "nilyo",
-  "version": "1.0.0",
-  "description": "Use your own LinkedIn, WhatsApp, Instagram, Telegram, Email (Gmail, Outlook, IMAP) and Calendar accounts from ChatGPT: search, read, message and act, with account connection and subscription handled in the conversation.",
+  "version": "1.0.1",
+  "description": "Use your own LinkedIn, WhatsApp, Instagram, Telegram, Email (Gmail, Outlook, IMAP) and Calendar accounts from ChatGPT: search, read, message and act. Accounts connect through the provider's own sign-in page or a QR code; plans are managed on nilyo.com.",
   "author": {
     "name": "Unipile SAS",
     "email": "contact@nilyo.com",

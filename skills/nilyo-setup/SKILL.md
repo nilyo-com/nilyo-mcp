@@ -14,7 +14,7 @@ Nilyo is a remote MCP server (`https://nilyo.com/mcp`) that gives Claude the use
 Call `list_connected_accounts` first. For a missing provider:
 - LinkedIn, Instagram, Gmail, Microsoft 365/Outlook, calendars → `account_connect(provider)` returns a secure link; the user signs in on the provider side.
 - WhatsApp → `whatsapp_connect` returns a QR code image to scan from WhatsApp › Linked devices; poll `account_connection_status` every 10–20 s.
-- Telegram → `telegram_connect` (QR or phone code).
+- Telegram → `telegram_connect` returns a QR code to scan from Telegram › Settings › Devices; accounts protected by a Telegram cloud password use the secure link from `account_connect(provider="telegram")`.
 - Generic IMAP mailbox → `account_connect(provider="imap")` returns the secure page where the mailbox is connected.
 Then retry the user's original request unchanged.
 
