@@ -30,8 +30,8 @@
     "com.openai": {
       "interface": {
         "displayName": "Nilyo",
-        "shortDescription": "Your LinkedIn, WhatsApp, email",
-        "longDescription": "Plugs your LinkedIn, WhatsApp, Instagram, Telegram, your email and your calendar — straight into ChatGPT, so it can act for you.\n\nReach the right people. Find them on LinkedIn, see who already knows them in your network, turn a profile link into a message that's ready to send, or follow up on WhatsApp. Say \"send a WhatsApp to Julien saying I'm running late\" and it's gone.\n\nNever miss a reply. Schedule a task and let ChatGPT check your LinkedIn, WhatsApp and email every morning, summarize what came in, flag the messages that still need an answer and draft the replies — you just approve.\n\nOne agent, all your channels. Comment on LinkedIn posts, research on Instagram, follow up on WhatsApp, confirm by email, check your calendar — without leaving the chat. Catch up on any inbox, grab the attachment you need, or re-read what you last wrote to someone before answering them.",
+        "shortDescription": "Use LinkedIn, WhatsApp & email",
+        "longDescription": "Nilyo connects the accounts you already use to ChatGPT: LinkedIn, WhatsApp, Instagram, Telegram, email (Gmail, Outlook or an IMAP mailbox) and calendars. ChatGPT can then work with them when you ask.\n\nWhat you can ask\n• LinkedIn: search people and companies, see who you already know at a company, read a profile from its URL, read and answer your conversations, send invitations.\n• WhatsApp, Instagram and Telegram: list and read your conversations, see what you received since a given time, and send a message to a contact you name.\n• Email and calendar: search and read your emails, open attachments, draft and send replies, and check your events.\n\nHow it works\nYou sign in to Nilyo, then connect each account through the provider's own sign-in page or a QR code. ChatGPT only uses the accounts you connected, sends nothing you did not ask for, and asks you to choose when several people or accounts match. Provider limits apply, and some features depend on your own account (for example LinkedIn Sales Navigator or Recruiter).\n\nPlans are managed on nilyo.com, with a 7-day free trial and no card required.",
         "developerName": "Unipile SAS",
         "category": "Productivity",
         "capabilities": [
@@ -44,10 +44,8 @@
         "termsOfServiceURL": "https://nilyo.com/terms",
         "defaultPrompt": [
           "Who do I know at Stripe on LinkedIn?",
-          "Open this LinkedIn profile URL and draft a short intro message, then send it once I approve.",
           "Send a WhatsApp to Julien saying I'll be 10 minutes late.",
-          "Search my IMAP inbox for the last email from Sarah and summarize it.",
-          "Show my LinkedIn conversations that still need a reply."
+          "Summarize the last email from Sarah in my inbox."
         ],
         "brandColor": "#6553EF",
         "composerIcon": "./assets/icon.png",
