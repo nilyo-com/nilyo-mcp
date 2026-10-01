@@ -2,7 +2,7 @@
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "app-6aabe80d738c81918a536651cb358595",
   "version": "1.0.1",
-  "description": "Use your own LinkedIn, WhatsApp, Instagram, Telegram, Email (Gmail, Outlook, IMAP) and Calendar accounts from ChatGPT: search, read, message and act. Accounts connect through the provider's own sign-in page or a QR code; plans are managed on nilyo.com.",
+  "description": "Use your own LinkedIn, WhatsApp, Instagram, Telegram, Email (Gmail, Outlook, IMAP) and Calendar accounts from ChatGPT: search, read, message and act. Accounts connect through the provider's own sign-in page or a QR code.",
   "author": {
     "name": "Unipile SAS",
     "email": "contact@nilyo.com",
@@ -31,7 +31,7 @@
       "interface": {
         "displayName": "Nilyo",
         "shortDescription": "Use LinkedIn, WhatsApp & email",
-        "longDescription": "Nilyo connects the accounts you already use to ChatGPT: LinkedIn, WhatsApp, Instagram, Telegram, email (Gmail, Outlook or an IMAP mailbox) and calendars. ChatGPT can then work with them when you ask.\n\nWhat you can ask\n• LinkedIn: search people and companies, see who you already know at a company, read a profile from its URL, read and answer your conversations, send invitations.\n• WhatsApp, Instagram and Telegram: list and read your conversations, see what you received since a given time, and send a message to a contact you name.\n• Email and calendar: search and read your emails, open attachments, draft and send replies, and check your events.\n\nHow it works\nYou sign in to Nilyo, then connect each account through the provider's own sign-in page or a QR code. ChatGPT only uses the accounts you connected, sends nothing you did not ask for, and asks you to choose when several people or accounts match. Provider limits apply, and some features depend on your own account (for example LinkedIn Sales Navigator or Recruiter).\n\nPlans are managed on nilyo.com, with a 7-day free trial and no card required.",
+        "longDescription": "Nilyo lets you handle your messages, contacts and schedule from ChatGPT: find people, catch up on conversations and emails, and reply, across the LinkedIn, WhatsApp, Instagram, Telegram, email (Gmail, Outlook or an IMAP mailbox) and calendar accounts you already use.\n\nWhat you can ask\n• LinkedIn: search people and companies, see who you already know at a company, read a profile from its URL, read and answer your conversations, send invitations.\n• WhatsApp, Instagram and Telegram: list and read your conversations, see what you received since a given time, and send a message to a contact you name.\n• Email and calendar: search and read your emails, open attachments, draft and send replies, and check your events.\n\nHow it works\nYou sign in to Nilyo, then connect each account through the provider's own sign-in page or a QR code. ChatGPT only uses the accounts you connected, sends nothing you did not ask for, and asks you to choose when several people or accounts match. Provider limits apply, and some features depend on your own account (for example LinkedIn Sales Navigator or Recruiter).",
         "developerName": "Unipile SAS",
         "category": "Productivity",
         "capabilities": [
