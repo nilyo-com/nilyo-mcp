@@ -30,8 +30,8 @@
     "com.openai": {
       "interface": {
         "displayName": "Nilyo",
-        "shortDescription": "Your own LinkedIn, WhatsApp, Instagram, Telegram, Email and Calendar accounts, usable from ChatGPT.",
-        "longDescription": "Plugs your LinkedIn, WhatsApp, Instagram, Telegram, your email and your calendar \u2014 straight into ChatGPT, so it can act for you.\n\nReach the right people. Find them on LinkedIn, see who already knows them in your network, turn a profile link into a message that's ready to send, or follow up on WhatsApp. Say \"send a WhatsApp to Julien saying I'm running late\" and it's gone.\n\nNever miss a reply. Schedule a task and let ChatGPT check your LinkedIn, WhatsApp and email every morning, summarize what came in, flag the messages that still need an answer and draft the replies \u2014 you just approve.\n\nOne agent, all your channels. Comment post on LinkedIn, Research on Instagram, follow up on WhatsApp, confirm by email, check your calendar \u2014 without leaving the chat. Catch up on any inbox, grab the attachment you need, or re-read what you last wrote to someone before answering them.",
+        "shortDescription": "Your LinkedIn, WhatsApp, email",
+        "longDescription": "Plugs your LinkedIn, WhatsApp, Instagram, Telegram, your email and your calendar — straight into ChatGPT, so it can act for you.\n\nReach the right people. Find them on LinkedIn, see who already knows them in your network, turn a profile link into a message that's ready to send, or follow up on WhatsApp. Say \"send a WhatsApp to Julien saying I'm running late\" and it's gone.\n\nNever miss a reply. Schedule a task and let ChatGPT check your LinkedIn, WhatsApp and email every morning, summarize what came in, flag the messages that still need an answer and draft the replies — you just approve.\n\nOne agent, all your channels. Comment on LinkedIn posts, research on Instagram, follow up on WhatsApp, confirm by email, check your calendar — without leaving the chat. Catch up on any inbox, grab the attachment you need, or re-read what you last wrote to someone before answering them.",
         "developerName": "Unipile SAS",
         "category": "Productivity",
         "capabilities": [
@@ -39,6 +39,7 @@
           "Write"
         ],
         "websiteURL": "https://nilyo.com",
+        "supportURL": "https://nilyo.com/support",
         "privacyPolicyURL": "https://nilyo.com/privacy",
         "termsOfServiceURL": "https://nilyo.com/terms",
         "defaultPrompt": [
@@ -51,6 +52,67 @@
         "brandColor": "#6553EF",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png"
+      },
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "List the accounts connected to the user's Nilyo account.",
+              "prompt": "Which accounts are connected to Nilyo?",
+              "tools_triggered": "list_connected_accounts",
+              "expected_behavior": "A list of the three connected accounts with provider, owner display name, identifier and status: the WhatsApp test line (Central), the exchange@nilyo.com mailbox and the LinkedIn account (Arnaud Hartmann)."
+            },
+            {
+              "description": "Send a WhatsApp message to a contact resolved by name.",
+              "prompt": "Send a WhatsApp to Paul saying hello from ChatGPT.",
+              "tools_triggered": "messaging_send_to_contact",
+              "expected_behavior": "Exactly one contact named Paul matches, the message is sent and a short confirmation names the recipient."
+            },
+            {
+              "description": "Read the most recent email of an IMAP mailbox through folder listing.",
+              "prompt": "Read the latest email in my exchange@nilyo.com mailbox and summarize it.",
+              "tools_triggered": "email_list_folders, email_list_folder_messages, email_read_message",
+              "expected_behavior": "The INBOX folder is resolved, its latest message is read and summarized with subject, sender and date."
+            },
+            {
+              "description": "Resolve a LinkedIn profile URL to the stable provider ID before an action.",
+              "prompt": "Open https://www.linkedin.com/in/williamhgates/ and tell me the current headline.",
+              "tools_triggered": "linkedin_get_profile_from_url",
+              "expected_behavior": "The public identifier is extracted from the URL, the profile is fetched and the headline is reported with the stable profile ID kept for later actions."
+            },
+            {
+              "description": "Show the user's plan and trial state without payment details.",
+              "prompt": "What plan am I on and when does my trial end?",
+              "tools_triggered": "account_get_subscription",
+              "expected_behavior": "Plan name, trial end date and days left, connected account limits and next steps; no Stripe identifiers or card data."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Do not send when the recipient cannot be resolved.",
+              "prompt": "Send a WhatsApp to Camille saying thanks.",
+              "tools_triggered": "messaging_send_to_contact",
+              "expected_behavior": "No chat or contact named Camille exists on the demo account: nothing is sent, the app returns not_found and ChatGPT asks for the full name or phone number instead of guessing."
+            },
+            {
+              "description": "Do not trigger for general knowledge unrelated to the user's accounts.",
+              "prompt": "Explain how LinkedIn's algorithm ranks posts.",
+              "tools_triggered": "none",
+              "expected_behavior": "The app is not invoked; ChatGPT answers from general knowledge because no account data or action is requested."
+            },
+            {
+              "description": "Refuse bulk automation that would exceed provider pacing.",
+              "prompt": "Send connection invitations to 500 CTOs in Paris today.",
+              "tools_triggered": "none",
+              "expected_behavior": "ChatGPT explains that Nilyo paces LinkedIn actions like a person and enforces a daily budget, and proposes a small, reviewed batch instead of bulk sending."
+            }
+          ]
+        },
+        "demo_recording_url": "https://nilyo.com/media/nilyo-chatgpt-demo.mp4",
+        "commerce": false
+      },
+      "publication": {
+        "release_notes": "1.0.1: Nilyo no longer requests restricted data in ChatGPT. No credentials (IMAP mailboxes connect through the secure hosted page), no verification codes (LinkedIn company-member verification is done on LinkedIn), no payment links (plans are managed on nilyo.com), no phone number (WhatsApp links by QR code)."
       }
     }
   }
