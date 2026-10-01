@@ -23,7 +23,7 @@ description: Use when the user wants to send, read or reply to WhatsApp, Telegra
 
 ## Accounts
 - Several accounts of one provider: `list_connected_accounts` lists names and identifiers; pass the `account_id` the user means. Nilyo never guesses.
-- Missing account: `whatsapp_connect` / `telegram_connect` return a QR code image (or a pairing code with `phone_number`); poll `account_connection_status` every 10–20 s until connected. Other providers: `account_connect(provider)` returns a secure link.
+- Missing account: `whatsapp_connect` / `telegram_connect` return a QR code image; poll `account_connection_status` every 10–20 s until connected. Other providers: `account_connect(provider)` returns a secure link.
 - Disconnected account (`reconnect_account`): reconnect the SAME `account_id`, never create a duplicate.
 
 ## Pacing

@@ -13,15 +13,15 @@ Nilyo is a remote MCP server (`https://nilyo.com/mcp`) that gives Claude the use
 ## 2. Connect the accounts the user needs
 Call `list_connected_accounts` first. For a missing provider:
 - LinkedIn, Instagram, Gmail, Microsoft 365/Outlook, calendars → `account_connect(provider)` returns a secure link; the user signs in on the provider side.
-- WhatsApp → `whatsapp_connect` returns a QR code image to scan from WhatsApp › Linked devices (or a pairing code with `phone_number`); poll `account_connection_status` every 10–20 s.
+- WhatsApp → `whatsapp_connect` returns a QR code image to scan from WhatsApp › Linked devices; poll `account_connection_status` every 10–20 s.
 - Telegram → `telegram_connect` (QR or phone code).
-- Generic IMAP mailbox → `imap_connect` with the mailbox login only if the user gives it explicitly; otherwise prefer the secure link.
+- Generic IMAP mailbox → `account_connect(provider="imap")` returns the secure page where the mailbox is connected.
 Then retry the user's original request unchanged.
 
 ## Reconnection
 A `reconnect_account` result names the account: reconnect the SAME `account_id` (`account_connect(provider, account_id)` / `whatsapp_connect(account_id)`), never a duplicate. `account_list_attention` lists everything that needs action.
 
 ## Rules
-- Never ask for provider passwords in the chat (except the explicit IMAP case above).
+- Never ask for passwords, verification codes or payment details in the chat.
 - Several accounts of one provider: Nilyo lists them by name; pass the `account_id` the user means, never guess.
 - Plan and billing questions: `account_get_subscription`; plans are managed on nilyo.com.
