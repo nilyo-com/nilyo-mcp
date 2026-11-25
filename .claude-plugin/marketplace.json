@@ -1,0 +1,18 @@
+{
+  "name": "nilyo",
+  "owner": {
+    "name": "Unipile SAS",
+    "email": "contact@nilyo.com",
+    "url": "https://nilyo.com"
+  },
+  "metadata": {
+    "description": "The Nilyo plugin for Claude Code: your own LinkedIn, WhatsApp, Instagram, Telegram, email and calendar accounts."
+  },
+  "plugins": [
+    {
+      "name": "nilyo",
+      "source": "./",
+      "description": "Your own LinkedIn, WhatsApp, Instagram, Telegram, email and calendar accounts in Claude, with skills for outreach, content, recruiting, messaging and inbox triage."
+    }
+  ]
+}
