@@ -1,6 +1,6 @@
 ---
 name: nilyo-recruiting
-description: Use when the user recruits through THEIR OWN LinkedIn account via Nilyo: 'applicants for my job posting', 'show this candidate's resume', 'source senior React developers in Lyon', 'my Recruiter projects', 'contact this candidate', 'search jobs', talent pipelines and hiring follow-ups. Covers LinkedIn job postings (Classic), Recruiter and Sales Navigator search. Do not use for sales prospecting (outreach skill) or content (content skill).
+description: "Use when the user recruits through THEIR OWN LinkedIn account via Nilyo: 'applicants for my job posting', 'show this candidate's resume', 'source senior React developers in Lyon', 'my Recruiter projects', 'contact this candidate', 'search jobs', talent pipelines and hiring follow-ups. Covers LinkedIn job postings (Classic), Recruiter and Sales Navigator search. Do not use for sales prospecting (outreach skill) or content (content skill)."
 ---
 # Recruiting with Nilyo
 

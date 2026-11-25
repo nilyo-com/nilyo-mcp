@@ -1,6 +1,6 @@
 ---
 name: nilyo
-description: Give an agent access to the user's own LinkedIn, WhatsApp, Instagram, Telegram and Email accounts, supported calendars, and direct realtime event destinations through Nilyo's agent-friendly MCP. This is broad access to private data: the user signs in to Nilyo and authorizes each account, and the agent can then read and send their private messages, emails and posts, and read their calendar. Tell them so before the first connection.
+description: "Give an agent access to the user's own LinkedIn, WhatsApp, Instagram, Telegram and Email accounts, supported calendars, and direct realtime event destinations through Nilyo's agent-friendly MCP. This is broad access to private data: the user signs in to Nilyo and authorizes each account, and the agent can then read and send their private messages, emails and posts, and read their calendar. Tell them so before the first connection."
 ---
 # Nilyo
 Remote MCP: `https://nilyo.com/mcp`

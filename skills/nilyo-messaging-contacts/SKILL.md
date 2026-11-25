@@ -1,6 +1,6 @@
 ---
 name: nilyo-messaging-contacts
-description: Use when the user wants to send, read or reply to WhatsApp, Telegram or Instagram messages from THEIR OWN account through Nilyo, or to look at Instagram profiles and followers: 'send a WhatsApp to Julien', 'what did Paul answer on Telegram', 'reply to the last Instagram DM from…', 'is this number on WhatsApp', 'who follows me on Instagram', 'research this creator on Instagram', voice notes, media, group chats, 'connect my WhatsApp / Telegram / Instagram'. Do not use for email (inbox skill) or for LinkedIn messages and prospecting (outreach skill).
+description: "Use when the user wants to send, read or reply to WhatsApp, Telegram or Instagram messages from THEIR OWN account through Nilyo, or to look at Instagram profiles and followers: 'send a WhatsApp to Julien', 'what did Paul answer on Telegram', 'reply to the last Instagram DM from…', 'is this number on WhatsApp', 'who follows me on Instagram', 'research this creator on Instagram', voice notes, media, group chats, 'connect my WhatsApp / Telegram / Instagram'. Do not use for email (inbox skill) or for LinkedIn messages and prospecting (outreach skill)."
 ---
 # Message contacts with Nilyo
 

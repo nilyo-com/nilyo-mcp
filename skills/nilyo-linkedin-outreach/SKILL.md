@@ -1,6 +1,6 @@
 ---
 name: nilyo-linkedin-outreach
-description: Use when the user wants to find, research, message, invite or follow up with people or companies on THEIR OWN LinkedIn through Nilyo: prospecting, recruiting, 'who do I know at X', 'open this LinkedIn profile URL', 'send a connection request', 'reply on LinkedIn', Sales Navigator or Recruiter searches, publishing or commenting posts. Do not use for generic LinkedIn advice without an account action, or for WhatsApp/email tasks (see the other Nilyo skills).
+description: "Use when the user wants to find, research, message, invite or follow up with people or companies on THEIR OWN LinkedIn through Nilyo: prospecting, recruiting, 'who do I know at X', 'open this LinkedIn profile URL', 'send a connection request', 'reply on LinkedIn', Sales Navigator or Recruiter searches, publishing or commenting posts. Do not use for generic LinkedIn advice without an account action, or for WhatsApp/email tasks (see the other Nilyo skills)."
 ---
 # LinkedIn outreach with Nilyo
 

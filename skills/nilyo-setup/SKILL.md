@@ -1,6 +1,6 @@
 ---
 name: nilyo-setup
-description: Use when the Nilyo plugin was just installed or the Nilyo MCP is not connected yet, when a Nilyo tool answers that the user must sign in, connect an account or reconnect one, or when the user asks how to set up Nilyo. Guides the OAuth sign-in and the connection of LinkedIn, WhatsApp, Instagram, Telegram, email or calendar accounts.
+description: "Use when the Nilyo plugin was just installed or the Nilyo MCP is not connected yet, when a Nilyo tool answers that the user must sign in, connect an account or reconnect one, or when the user asks how to set up Nilyo. Guides the OAuth sign-in and the connection of LinkedIn, WhatsApp, Instagram, Telegram, email or calendar accounts."
 ---
 # Set up Nilyo
 

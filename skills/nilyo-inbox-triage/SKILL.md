@@ -1,6 +1,6 @@
 ---
 name: nilyo-inbox-triage
-description: Use when the user wants a summary, count, search or follow-up across THEIR OWN inboxes through Nilyo: 'what came in today', 'unanswered messages', 'find the email from Sarah', 'read the latest email', 'how many emails today', scheduled daily check-ins, drafting replies to email/LinkedIn/WhatsApp, mailbox folders and attachments on Gmail, Outlook or IMAP. Do not use for sending a single chat message by name (messaging skill) or LinkedIn prospecting (outreach skill).
+description: "Use when the user wants a summary, count, search or follow-up across THEIR OWN inboxes through Nilyo: 'what came in today', 'unanswered messages', 'find the email from Sarah', 'read the latest email', 'how many emails today', scheduled daily check-ins, drafting replies to email/LinkedIn/WhatsApp, mailbox folders and attachments on Gmail, Outlook or IMAP. Do not use for sending a single chat message by name (messaging skill) or LinkedIn prospecting (outreach skill)."
 ---
 # Inbox triage with Nilyo
 
