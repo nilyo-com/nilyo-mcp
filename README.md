@@ -5,9 +5,9 @@
 - **Endpoint:** `https://nilyo.com/mcp` (Streamable HTTP)
 - **Auth:** OAuth 2.1 with dynamic client registration (sign in or create your Nilyo account on the authorization page; 7-day free trial, no card). Personal tokens for runtimes without OAuth.
 - **Tools:** 170+ intent-named tools with titles and MCP annotations (read-only / destructive / open-world), exact ID resolution, corrective errors, human-like pacing per provider.
-[![smithery badge](https://smithery.ai/badge/arnaud-ehq0/nilyo)](https://smithery.ai/servers/arnaud-ehq0/nilyo) [![Nilyo MCP connector](https://glama.ai/mcp/connectors/com.nilyo/nilyo/badges/score.svg)](https://glama.ai/mcp/connectors/com.nilyo/nilyo)
+[![Nilyo MCP connector](https://glama.ai/mcp/connectors/com.nilyo/nilyo/badges/score.svg)](https://glama.ai/mcp/connectors/com.nilyo/nilyo)
 
-- **Registry:** `com.nilyo/nilyo` in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.nilyo/nilyo) · [Glama](https://glama.ai/mcp/connectors/com.nilyo/nilyo) · [Smithery](https://smithery.ai/servers/arnaud-ehq0/nilyo) · [mcp.so](https://mcp.so/servers/nilyo)
+- **Registry:** `com.nilyo/nilyo` in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.nilyo/nilyo) · [Glama](https://glama.ai/mcp/connectors/com.nilyo/nilyo) · [mcp.so](https://mcp.so/servers/nilyo)
 
 This repository holds the distribution kit (plugin manifests, skills, guides).
 
@@ -27,7 +27,7 @@ This repository holds the distribution kit (plugin manifests, skills, guides).
 ### Claude (claude.ai, Claude Desktop, Claude Code, Cowork)
 Settings → Connectors → *Add custom connector* → `https://nilyo.com/mcp` → sign in on the Nilyo page. Claude Code: `claude mcp add --transport http nilyo https://nilyo.com/mcp`.
 
-This repository is also a **Claude plugin** (`.claude-plugin/plugin.json` + `.mcp.json` + `skills/`): `claude plugin marketplace add nilyo-com/nilyo-mcp` then `claude plugin install nilyo`, or install it from the Claude plugin directory once listed. The plugin bundles the Nilyo connector with the six skills below and a setup skill.
+This repository is also a **Claude plugin** (`.claude-plugin/plugin.json` + `.mcp.json` + `skills/`): `/plugin install nilyo --marketplace nilyo-com/nilyo-mcp`, or install it from the Claude plugin directory once listed. The plugin bundles the Nilyo connector with the six skills below and a setup skill.
 
 ### ChatGPT
 Settings → Plugins (Developer mode) → add MCP server `https://nilyo.com/mcp` with OAuth, or install the published **Nilyo** plugin from the directory. The portable plugin package is in [`chatgpt/`](chatgpt/) and the skills in [`skills/`](skills/).

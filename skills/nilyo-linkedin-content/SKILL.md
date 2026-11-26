@@ -1,6 +1,6 @@
 ---
 name: nilyo-linkedin-content
-description: Use when the user wants to publish, comment, react to or monitor LinkedIn content from THEIR OWN account through Nilyo: 'write a LinkedIn post', 'comment on this post', 'who reacted to my post', 'reply to the comments', 'what did X publish recently', 'like this', 'follow this company', engagement routines, content ideas grounded in their network. Do not use for direct messages or invitations (outreach skill) or for generic social-media advice without an account action.
+description: "Use when the user wants to publish, comment, react to or monitor LinkedIn content from THEIR OWN account through Nilyo: 'write a LinkedIn post', 'comment on this post', 'who reacted to my post', 'reply to the comments', 'what did X publish recently', 'like this', 'follow this company', engagement routines, content ideas grounded in their network. Do not use for direct messages or invitations (outreach skill) or for generic social-media advice without an account action."
 ---
 # LinkedIn content & engagement with Nilyo
 
