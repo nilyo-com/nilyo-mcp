@@ -4,7 +4,7 @@
 
 - **Endpoint:** `https://nilyo.com/mcp` (Streamable HTTP)
 - **Auth:** OAuth 2.1 with dynamic client registration (sign in or create your Nilyo account on the authorization page; 7-day free trial, no card). Personal tokens for runtimes without OAuth.
-- **Tools:** 170+ intent-named tools with titles and MCP annotations (read-only / destructive / open-world), exact ID resolution, corrective errors, human-like pacing per provider.
+- **Tools:** 170+ intent-named tools with titles and MCP annotations (read-only / destructive / open-world), exact ID resolution, corrective errors, per-provider rate limits.
 [![Nilyo MCP connector](https://glama.ai/mcp/connectors/com.nilyo/nilyo/badges/score.svg)](https://glama.ai/mcp/connectors/com.nilyo/nilyo)
 
 - **Registry:** `com.nilyo/nilyo` in the [official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=com.nilyo/nilyo) · [Glama](https://glama.ai/mcp/connectors/com.nilyo/nilyo) · [mcp.so](https://mcp.so/servers/nilyo)
@@ -62,7 +62,8 @@ Task-oriented skills (SKILL.md + `agents/openai.yaml`), usable in ChatGPT, Codex
 
 - Nilyo never guesses between two of your accounts: the agent lists them and passes the `account_id` you mean.
 - Sends, posts, invitations and deletions are separate tools flagged `destructiveHint`; agents show the text and wait for approval.
-- Pacing: LinkedIn and Instagram ~100 actions/day per account, WhatsApp 20 new conversations/day, calls serialized per account.
+- One-to-one messages only: the agent sends what you write or approve, never cold campaigns or bulk messages, and stops contacting anyone who asks not to be contacted.
+- Rate limits: LinkedIn and Instagram ~100 actions/day per account, WhatsApp 20 new conversations/day, calls serialized per account.
 - Accounts are connected once through a secure link (Hosted Auth) or a WhatsApp/Telegram QR code shown in the conversation; credentials never transit through the agent.
 
 Setup guide: https://nilyo.com/setup-for-agents · Pricing: https://nilyo.com/pricing · Privacy: https://nilyo.com/privacy · Support: https://nilyo.com/support

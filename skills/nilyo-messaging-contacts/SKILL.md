@@ -26,5 +26,7 @@ description: "Use when the user wants to send, read or reply to WhatsApp, Telegr
 - Missing account: `whatsapp_connect` / `telegram_connect` return a QR code image; poll `account_connection_status` every 10–20 s until connected. Other providers: `account_connect(provider)` returns a secure link.
 - Disconnected account (`reconnect_account`): reconnect the SAME `account_id`, never create a duplicate.
 
-## Pacing
+## Rate limits
+When someone asks not to be contacted ("stop", "not interested", "remove me"), stop: do not message, invite or follow up with them again, and tell the user.
+
 WhatsApp: 20 new conversations per day, 15 s between them; existing chats are not limited. Instagram: ~100 actions per day, calls serialized. Telegram: no local limit. Do not loop on `PROVIDER_ACTION_LIMIT`.

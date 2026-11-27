@@ -41,8 +41,8 @@ Use the inbound hook/webhook capability supported by the installed OpenClaw runt
 ### Hermes
 Use the inbound HTTP/webhook trigger or event adapter supported by the installed Hermes runtime. Register its public HTTPS POST URL. When awakened, use Nilyo MCP to resolve complete provider context from event IDs. If that Hermes build lacks a direct inbound trigger, use its documented event adapter rather than polling.
 
-## Provider pacing
-Providers watch for automation. Call provider tools one at a time, never in parallel, keep a few seconds between calls, prefer one precise search, stop when the result is good enough, never enumerate large lists. Nilyo serializes calls per account and keeps simple budgets (LinkedIn 100 actions per 24 h including profile views, searches and chat/message listings; Instagram 100 actions; WhatsApp 20 new chats per day, 15 s apart, ~24 h warm-up after (re)connection); respect `PROVIDER_ACTION_LIMIT`.
+## Provider rate limits
+Providers rate-limit accounts. Call provider tools one at a time, never in parallel, keep a few seconds between calls, prefer one precise search, stop when the result is good enough, never enumerate large lists. Nilyo serializes calls per account and keeps simple budgets (LinkedIn 100 actions per 24 h including profile views, searches and chat/message listings; Instagram 100 actions; WhatsApp 20 new chats per day, 15 s apart, ~24 h warm-up after (re)connection); respect `PROVIDER_ACTION_LIMIT`.
 
 ## Error recovery
 Follow structured `error.next_tools` when present. Re-resolve NOT_FOUND/INVALID IDs. Never blindly repeat writes after timeout/conflict/rate limit; read current state first. Preserve pending intent through connect/reconnect/subscribe flows.

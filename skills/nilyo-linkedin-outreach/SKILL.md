@@ -16,6 +16,7 @@ Nilyo gives ChatGPT the user's own LinkedIn account (tools `linkedin_*`). Work w
 
 ## Rules
 - Pacing: LinkedIn calls are serialized with a daily budget (~100 actions including profile views and searches). Prefer one precise search over many broad ones; never bulk-invite. Explain the budget when the user asks for hundreds of actions and propose a small reviewed batch.
+- One-to-one only: messages and invitations the user writes or approves, never cold campaigns or bulk sends. When someone asks not to be contacted ("stop", "not interested", "remove me"), stop: do not message, invite or follow up with them again, and tell the user.
 - `PROFILE_NOT_ACCESSIBLE` = private/restricted profile, do not retry the same identifier.
 - Results carry `next_tools` and corrective errors: follow them instead of retrying blindly.
 - Never paste tokens, cookies or credentials; the account is connected through a secure link (`account_connect(provider="linkedin")`) when missing, reconnected with the same `account_id` when `reconnect_account` is returned.
