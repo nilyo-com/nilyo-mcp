@@ -18,7 +18,7 @@ Nilyo gives ChatGPT the user's own LinkedIn account. Every publication is public
 - Network: `linkedin_list_followers`, `linkedin_list_following`; follow/unfollow only when asked.
 
 ## Routines
-"Engage with my prospects every morning": list the people, fetch their latest post each, propose one comment per post, wait for approval, then comment. Keep it to a handful per day.
+"Engage with my network every morning": list the people the user names, fetch their latest post each, propose one comment per post, wait for approval, then comment. Keep it to a handful per day.
 
 ## Rules
 - LinkedIn budget: ~100 actions per day including reads and searches, calls serialized. Never mass-comment or mass-like; propose a small reviewed batch.

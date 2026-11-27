@@ -1,8 +1,8 @@
 {
   "name": "nilyo",
   "displayName": "Nilyo",
-  "version": "1.5.3",
-  "description": "Your own LinkedIn, WhatsApp, Instagram, Telegram, Email and Calendar accounts in Claude: search, read, message and publish on your accounts through the Nilyo remote MCP (OAuth), with skills for outreach, content, recruiting, messaging, inbox triage and account setup.",
+  "version": "1.5.4",
+  "description": "Nilyo, by Unipile, brings your own LinkedIn, WhatsApp, Instagram, Telegram, email and calendar accounts into Claude: catch up on messages, prepare meetings and draft replies that are sent only when you approve them. Skills for LinkedIn, content, recruiting, messaging, inbox triage and account setup.",
   "author": {
     "name": "Unipile SAS",
     "email": "contact@nilyo.com",
