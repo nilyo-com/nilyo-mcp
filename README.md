@@ -1,6 +1,8 @@
-# Nilyo — your own LinkedIn, WhatsApp, Instagram, Telegram, Email and Calendar, from any agent
+# Nilyo — your LinkedIn, WhatsApp, Instagram, Telegram, email and calendar in your AI assistant
 
-[Nilyo](https://nilyo.com) is a remote MCP server that connects the accounts you already use to ChatGPT, Claude, Cursor, OpenClaw, Hermes, n8n or any MCP-compatible agent, so it can **search, read and act for you on your own accounts** — no browser automation.
+[Nilyo](https://nilyo.com), by Unipile, connects the accounts you already use to ChatGPT, Claude, Cursor, OpenClaw, Hermes, n8n or any MCP-compatible agent. Your assistant can **catch up on your messages, prepare your meetings and draft your replies**, and it sends a message only when you approve it.
+
+Nilyo runs on the Unipile API. You connect each account once through Nilyo's secure connection page, with the official Google and Microsoft sign-in for email and calendar, and your credentials never reach the agent.
 
 - **Endpoint:** `https://nilyo.com/mcp` (Streamable HTTP)
 - **Auth:** OAuth 2.1 with dynamic client registration (sign in or create your Nilyo account on the authorization page; 7-day free trial, no card). Personal tokens for runtimes without OAuth.
@@ -15,8 +17,8 @@ This repository holds the distribution kit (plugin manifests, skills, guides).
 
 | Provider | Examples |
 | --- | --- |
-| **LinkedIn** | search people, companies, posts and jobs; "who do I know at Stripe?"; turn a profile URL into a ready-to-send message or invitation; read and answer conversations; publish, comment, react; Sales Navigator and Recruiter when your account has them; job postings and applicants |
-| **WhatsApp** | "send a WhatsApp to Julien saying I'm running late"; read and reply to chats; voice notes, media, groups |
+| **LinkedIn** | search people, companies, posts and jobs; "who do I know at Stripe?"; draft a message or an invitation for a profile you open; read and answer your conversations; publish, comment, react; Sales Navigator and Recruiter when your account has them; job postings and applicants |
+| **WhatsApp** | read and reply to your chats, "tell Julien I'm running late"; voice notes, media, groups |
 | **Instagram, Telegram** | direct messages; Instagram profiles and followers; Telegram groups and channels |
 | **Email** | Gmail, Outlook and any IMAP mailbox: folders, threads, search, attachments, drafts, send and reply |
 | **Calendar** | Google and Microsoft calendars: list, create, update events |
@@ -51,7 +53,7 @@ Task-oriented skills (SKILL.md + `agents/openai.yaml`), usable in ChatGPT, Codex
 
 | Skill | Use it for |
 | --- | --- |
-| `nilyo-linkedin-outreach` | prospecting, network, messages and invitations |
+| `nilyo-linkedin-outreach` | finding people, your network, messages and invitations |
 | `nilyo-linkedin-content` | posts, comments, reactions, engagement routines |
 | `nilyo-recruiting` | applicants, resumes, Recruiter projects, sourcing |
 | `nilyo-messaging-contacts` | WhatsApp, Telegram and Instagram messages by contact name |
@@ -64,6 +66,6 @@ Task-oriented skills (SKILL.md + `agents/openai.yaml`), usable in ChatGPT, Codex
 - Sends, posts, invitations and deletions are separate tools flagged `destructiveHint`; agents show the text and wait for approval.
 - One-to-one messages only: the agent sends what you write or approve, never cold campaigns or bulk messages, and stops contacting anyone who asks not to be contacted.
 - Rate limits: LinkedIn and Instagram ~100 actions/day per account, WhatsApp 20 new conversations/day, calls serialized per account.
-- Accounts are connected once through a secure link (Hosted Auth) or a WhatsApp/Telegram QR code shown in the conversation; credentials never transit through the agent.
+- Accounts are connected once through Nilyo's secure connection page; credentials never transit through the agent.
 
 Setup guide: https://nilyo.com/setup-for-agents · Pricing: https://nilyo.com/pricing · Privacy: https://nilyo.com/privacy · Support: https://nilyo.com/support
